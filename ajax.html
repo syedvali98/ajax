@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="ajax.css" >  
+
+    <title>Search</title>
+  </head>
+  <body>
+    <div class="container">
+        
+        <div class="searchEngine">
+        
+        <div class="row">
+            
+            <div class="jumbotron jumbotron-fluid" style="margin-left: auto; margin-right: auto">
+                 <div class="container">
+                      <h1 class="display-4">MoviePedia</h1>
+                         <p class="lead">Search about your favourite movies.</p>
+                 </div>
+            </div>
+            
+        </div>
+        
+        <div class="row">
+            
+            
+            <div class="col-5">
+                
+                <div class="input-group mb-3">
+                   <input type="text" class="form-control" id="movie-title" placeholder="Movie Title" aria-label="Movie Title" aria-describedby="button-addon2">
+                     
+                </div>
+             
+            </div>
+            
+            
+            
+            <div class="col-5">
+                
+                <div class="input-group mb-3">
+                   <input type="text" class="form-control" id="movie-year" placeholder="Year" aria-label="Year" aria-describedby="button-addon2">
+                     
+                </div>
+             
+            </div>
+                   
+        </div>
+        
+        <div class="row">
+                
+                <div class="col-10" style="margin-left: auto; margin-right: auto">
+                    
+                    <button id="searchButton" type="button" class="btn btn-primary btn-lg btn-block searchButton">Search</button>    
+                
+            </div> 
+                
+            </div>
+        
+        
+        <div class="row">
+            
+            
+            <div class="col-6 searchbar2">
+                
+                <div class="input-group mb-3">
+                   <input type="text" class="form-control" id="movie-id" placeholder="Movie Id" aria-label="Movie Id" aria-describedby="button-addon2">
+                     
+                </div>
+             
+            </div>
+            
+        </div>
+        
+        <div class="row">
+                
+                <div class="col-10" style="margin-left: auto; margin-right: auto">
+                    
+                    <button type="button" class="btn btn-primary btn-lg btn-block searchButton">Search</button>    
+                
+            </div> 
+                
+            </div>
+            
+            </div>
+        
+        <div class="container resultBox">
+            <div id="response" class="card">
+                <img id="poster" class="card-img-top" style="width: 40%; margin-left: auto; margin-right: auto;" src="" alt="">
+                    <div class="card-body">
+                        <h5 id="card-title" class="card-title"></h5>
+                           <p class="card-text">.</p>
+                    </div>
+                
+                <div id="year" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="rated" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="released" class="card">
+                    <div class="card-body"> 
+                       
+                    </div>
+                </div>
+                
+                <div id="runtime" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="genre" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="director" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="writer" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="actors" class="card">
+                    <div class="card-body"> 
+
+                    </div>
+                </div>
+                
+                <div id="plot" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="language" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="country" class="card">
+                    <div class="card-body"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="awards" class="card">
+                    <div class="card-body"> 
+                       
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <a id="reButton" class="btn rebutton btn-primary btn-lg" href="index.html" role="button">Click Here to search another Movie</a>
+          </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>  
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      
+    <script src="ajax.js"></script>
+      
+  </body>
+</html>
